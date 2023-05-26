@@ -154,4 +154,17 @@
                 <h1 style="font-size:4rem">Files</h1>
 
                 <p>Click on a file to view it.</p>
+                <!-- iterate on files variable -->
                 <ul>
+                    {% for file in files %} {% if file.split('.')[-1] == 'mp4' %}
+                    <li><a href="/stream?v={{ file.split('.')[0] + '.m3u8' }}">{{ file }}</a></li>
+                    {% else %}
+                    <li><a href="/content/{{ file }}">{{ file }}</a></li>
+                    {% endif %} {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
