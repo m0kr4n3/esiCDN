@@ -8,6 +8,6 @@ COPY content /usr/share/nginx/content/
 
 COPY certs/* /etc/ssl/
 
-EXPOSE 443
+EXPOSE 8000
 
 

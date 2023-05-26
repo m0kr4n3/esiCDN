@@ -18,7 +18,7 @@ spec:
       - name: nginx
         image: m0kr4n3/projet_2cs_cdn:nginx
         ports:
-        - containerPort: 443
+        - containerPort: 8000
         imagePullPolicy: Always
 ---
 apiVersion: v1
@@ -31,6 +31,6 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      port: 443
-      targetPort: 443
+      port: 8000
+      targetPort: 8000
       nodePort: 30100
