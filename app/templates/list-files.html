@@ -14,7 +14,7 @@
             font-family: 'Poppins', sans-serif;
             color: #5157c0;
         }
-
+        
         nav {
             position: fixed;
             background: #5157c0;
@@ -22,7 +22,7 @@
             padding: 10px 0;
             z-index: 12;
         }
-
+        
         nav .menu {
             max-width: 1250px;
             margin: auto;
@@ -31,27 +31,27 @@
             justify-content: space-between;
             padding: 0 20px;
         }
-
+        
         .menu .logo a {
             text-decoration: none;
             color: #fff;
             font-size: 35px;
             font-weight: 600;
         }
-
+        
         .menu ul {
             display: inline-flex;
         }
-
+        
         .menu ul li {
             list-style: none;
             margin-left: 7px;
         }
-
+        
         .menu ul li:first-child {
             margin-left: 0px;
         }
-
+        
         .menu ul li a {
             text-decoration: none;
             color: #fff;
@@ -61,12 +61,12 @@
             border-radius: 5px;
             transition: all 0.3s ease;
         }
-
+        
         .menu ul li a:hover {
             background: #204bb8;
             color: white;
         }
-
+        
         .img {
             background-color: white;
             width: 100%;
@@ -76,58 +76,55 @@
             position: relative;
             padding: 10rem;
         }
-
+        
         a {
             color: #5157c0;
         }
-
+        
         ul {
             list-style: none;
         }
-
+        
         ul.ascii,
         ul {
             margin-left: 0;
             padding-left: 0;
             list-style: none;
         }
-
+        
         ul.ascii li {
             margin: 0;
             padding: 0;
             margin-bottom: 15px;
         }
-
         /* level 1 */
-
+        
         ul.ascii>li::before {
             content: "";
         }
-
         /* level 2 */
-
+        
         ul.ascii>li>ul>li::before {
             content: "├──\00a0";
         }
-
+        
         ul.ascii>li>ul>li:last-child::before {
             content: "└──\00a0";
         }
-
         /* level 3 */
-
+        
         ul.ascii>li>ul>li>ul>li::before {
             content: "│\00a0\00a0\00a0├──\00a0"
         }
-
+        
         ul.ascii>li>ul>li>ul>li:last-child::before {
             content: "│\00a0\00a0\00a0└──\00a0";
         }
-
+        
         ul.ascii>li>ul>li:last-child>ul>li::before {
             content: "\00a0\00a0\00a0\00a0├──\00a0"
         }
-
+        
         ul.ascii>li>ul>li:last-child>ul>li:last-child::before {
             content: "\00a0\00a0\00a0\00a0└──\00a0";
         }
@@ -137,7 +134,7 @@
 <body>
     <nav>
         <div class="menu">
-            <div class="logo"><a href="#">esiCDN</a></div>
+            <div class="logo"><a href="/">esiCDN</a></div>
             <ul>
                 <li><a href="/">Log Out</a></li>
             </ul>
@@ -148,7 +145,6 @@
             <li>
                 <h1 style="font-size: 2.5rem">Files</h1>
                 <p style="margin-bottom: 10px;">Click on a file to view it.</p>
-                <!-- iterate on files variable -->
                 <ul>
                     {% for file in files %} {% if file.split('.')[-1] == 'mp4' %}
                     <li><a href="/stream?v={{ file.split('.')[0] + '.m3u8' }}">{{ file }}</a></li>

@@ -10,6 +10,8 @@ services:
       # - "443:443"
       # - "80:80"
       - "8000:8000"
+    volumes:
+      - ./content:/usr/share/nginx/content/
     depends_on:
       - app-service
   
@@ -20,3 +22,7 @@ services:
     image: m0kr4n3/projet_2cs_cdn:app
     ports:
       - '5000:5000'
+    volumes:
+      - ./content:/content
+
+
