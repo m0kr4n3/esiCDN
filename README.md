@@ -1,8 +1,7 @@
-
-# Algerian Student CDN
+# esiCDN - a CDN architecture for Algerian universities
 
 ## Overview
-The Algerian Student CDN is a customized Content Delivery Network designed to meet the specific needs of Algerian students. This CDN aims to accelerate the distribution of educational content, providing students with faster loading times and increased availability. The system comprises three main components: GeoDNS, cache servers, and an origin server.
+esiCDN is a customized Content Delivery Network designed to meet the specific needs of Algerian students. This CDN aims to accelerate the distribution of educational content, providing students with faster loading times and increased availability. The system comprises three main components: GeoDNS, cache servers, and an origin server.
 
 ## Architecture Diagram
 
