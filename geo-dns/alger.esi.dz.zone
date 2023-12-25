@@ -1,0 +1,14 @@
+$TTL 30 s
+$ORIGIN esi.dz.
+@ IN SOA ns1.esi.dz. admin.esi.dz. (
+
+2023050801 ; Serial
+3600 ; Refresh
+1800 ; Retry
+604800 ; Expire
+86400 ; MinimumTTL
+
+)
+@ IN NS ns1.esi.dz.
+ns1 IN A 192.168.0.4
+cdn IN A 192.168.0.3 ; l adreese IP du serveur cache d Alger
