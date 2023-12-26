@@ -30,7 +30,7 @@ The videos are served through streaming, allowing cache servers to efficiently s
 ![origin](pictures/origin3.png)
 
 ## Project Team
-The Algerian Student CDN was realized with the collaborative efforts of:
+esiCDN was realized with the collaborative efforts of:
 
 - Khaled Fouad MEDDAH
 - Zakaria HEBBAL
